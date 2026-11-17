@@ -501,7 +501,8 @@ footer .fine{
 .a21 .tblock .num,.a27 .tblock .num{color:var(--bluette-700);font-size:13cqw}
 .a21 .cap,.a27 .cap{color:var(--black)}
 .a21 .tblock,.a27 .tblock{max-width:24cqw}
-.a21 .amb,.a27 .amb{top:calc(50% + 3.6cqw)}
+.a21 .amb,.a27 .amb{top:calc(50% + .5cqw);gap:.45cqw}
+.a21 .amb .r,.a27 .amb .r{height:2cqw}  /* più compatto: lascia libero il footer con i tre loghi (17/11) */
 .amb-k{margin-top:1.6cqw;color:var(--bluette-700)!important;font-weight:700;line-height:1.35}
 .amb .r.hot .b{background:var(--bluette-700)}
 .play .amb .r.hot .b{animation:growX .9s var(--ease) var(--d,0s) both,toblu .5s ease var(--d2) both}
@@ -555,7 +556,7 @@ footer .fine{
 /* ── Scena 33: cerchi in linea d'aria attorno al borgo; testi a destra ── */
 .a33 .shade{background:radial-gradient(ellipse 85% 110% at 100% 55%,rgba(0,0,0,.74) 0%,rgba(0,0,0,.4) 50%,rgba(0,0,0,0) 80%)}
 .a33 .tblock{left:auto;right:5cqw;max-width:38cqw}
-.a33 svg.rings{position:absolute;left:30%;top:60%;width:26cqw;height:26cqw;transform:translate(-50%,-50%);overflow:visible;z-index:1}
+.a33 svg.rings{position:absolute;left:30%;top:51%;width:26cqw;height:26cqw;transform:translate(-50%,-50%);overflow:visible;z-index:1}
 
 /* ── Scena 34: mappa delle aree interne e asset ── */
 .colL{position:absolute;left:5cqw;top:10.6cqw;bottom:7.6cqw;width:44cqw;display:flex;flex-direction:column;justify-content:center;gap:1.6cqw}
@@ -580,6 +581,14 @@ footer .fine{
 .tline .ms{font-family:'Atkinson Hyperlegible Mono',monospace;font-size:30px;font-weight:600;letter-spacing:.1em;fill:#FFFFFF;text-transform:uppercase}
 .type span{opacity:1}
 .play .type span{animation:fade .01s linear var(--d,0s) both}
+
+/* ── Footer di ogni frame (17/11, per le tv locali): OpenEconomics per esteso + ANCI Lazio + Regione Lazio ── */
+.foot{gap:2.6cqw}
+.foot img{height:auto;width:auto;display:block}
+.foot img.f-oe{height:1.9cqw}
+.foot img.f-anci{height:3.6cqw}
+.foot img.f-lazio{height:2.9cqw}
+.light .foot img{filter:brightness(0)}
 </style>
 </head>
 <body>
@@ -603,10 +612,10 @@ footer .fine{
     <nav class="parts" aria-label="Parti del video"><a href="Storyboard-Rieti-Parte-1.html">Parte 1 · La foto del territorio</a><a href="Storyboard-Rieti-Parte-2.html">Parte 2 · Il metodo del cubo</a><a href="Storyboard-Rieti-Parte-3.html" aria-current="page">Parte 3 · Sei direttrici</a></nav>
     <p class="eyebrow">OpenEconomics · Storyboard visivo · Bozza</p>
     <h1>Video analisi territoriale Rieti · Parte 3</h1>
-    <p class="sub">Le sei direttrici di sviluppo territoriale (le dimensioni del cubo), due scene per dimensione: cover, dodici scene dalla sceneggiatura v4 del 13 novembre 2026 e la chiusura con claim e loghi. Stesso impianto della Parte 3 di Viterbo: barre degli ambiti, quadratini, cerchi in linea d'aria, mappa delle aree interne, card obiettivo e indicatore. Numeri, mappe e schemi si animano a tempo con la voce stimata.</p>
+    <p class="sub">Le sei direttrici di sviluppo territoriale (le dimensioni del cubo), due scene per dimensione: dodici scene dalla sceneggiatura v4 del 13 novembre 2026 e la chiusura con claim e loghi. Stesso impianto della Parte 3 di Viterbo: barre degli ambiti, quadratini, cerchi in linea d'aria, mappa delle aree interne, card obiettivo e indicatore. Numeri, mappe e schemi si animano a tempo con la voce stimata.</p>
     <dl class="meta">
       <div><dt>Durata in sceneggiatura</dt><dd>3:22 (5:02 – 8:24) più chiusura</dd></div>
-      <div><dt>In questa pagina</dt><dd>3:35 con la cover, più 6 s di chiusura</dd></div>
+      <div><dt>In questa pagina</dt><dd>3:29 di scene, più 6 s di chiusura (senza cover)</dd></div>
       <div><dt>Formato</dt><dd>Orizzontale 16:9</dd></div>
       <div><dt>Lingua</dt><dd>Italiano</dd></div>
       <div><dt>Voci</dt><dd>Uomo e donna per dimensione: 1, 3, 5 uomo · 2, 4, 6 donna</dd></div>
@@ -644,27 +653,6 @@ footer .fine{
     <div class="grid" id="grid">
 
       <!-- Cover ──────────────────────────────────────────────────────── -->
-      <article class="beat">
-        <div class="frame cover" data-dur="6" tabindex="0" role="button" aria-label="Cover, rivedi animazione">
-          <div class="stage">
-            <span class="big a-fade" style="--d:.2s" aria-hidden="true">28–34</span>
-            <div class="tblock">
-              <p class="k a-up" style="--d:.35s">Analisi territoriale · Provincia di Rieti</p>
-              <p class="hl line1 a-up" style="--d:.9s">Parte 3</p>
-              <p class="hl line2 a-up" style="--d:1.5s">Sei direttrici di sviluppo territoriale</p>
-            </div>
-          </div>
-          <img class="anci" src="assets/logo-anci-lazio-white.png" alt="ANCI Lazio"><div class="foot"><img src="assets/logo-mark-white.svg" alt="OpenEconomics"></div><span class="tc">Cover · 6 s</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
-        </div>
-        <div class="info">
-          <p class="idx">Cover · Parte 3 <span class="chip g">Come Viterbo</span></p>
-          <dl>
-            <div><dt>On-screen</dt><dd>Analisi territoriale · Provincia di Rieti · «Parte 3» · «Sei direttrici di sviluppo territoriale» · filigrana 28–34 · logo ANCI Lazio in alto a destra</dd></div>
-            <div><dt>Voiceover</dt><dd class="vo">Nessuno: musica in apertura.</dd></div>
-            <div><dt>Nota</dt><dd class="note">Prima della cover c'è lo stacco di fine Parte 2 («Passiamo alla fase dei workshop»), che chiude la pagina della Parte 2. Il moderatore organizza i tavoli, poi parte questa cover. Due scene per dimensione, chip «Dimensione N».</dd></div>
-          </dl>
-        </div>
-      </article>
 
       <!-- 21 ────────────────────────────────────────────────────────── -->
       <article class="beat">
@@ -680,7 +668,7 @@ footer .fine{
               <span class="ref a-fade" style="--d:14.0s"><b>50</b> resto del Lazio,<br>Roma esclusa</span>
             </div>
           </div>
-          <div class="foot"><img src="assets/logo-mark-black.svg" alt="OpenEconomics"></div><span class="tc">Sc. 21 · 0:06 – 0:29</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
+          <div class="foot"><img class="f-oe" src="assets/logo-white.svg" alt="OpenEconomics"><img class="f-anci" src="assets/logo-anci-lazio-white.png" alt="ANCI Lazio"><img class="f-lazio" src="assets/logo-regione-lazio-white.png" alt="Regione Lazio"></div><span class="tc">Sc. 21 · 0:00 – 0:23</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
         </div>
         <div class="info">
           <p class="idx">Scena 21 · Dimensione 1: infrastrutture produttive e logistica <span class="chip">Dati reali</span> <span class="chip g">Dati provvisori</span></p>
@@ -708,7 +696,7 @@ footer .fine{
             </div>
             <div class="pmap a-fade" style="--d:11.5s"><svg id="m22" viewBox="0 0 600 600" aria-hidden="true" data-d="11.8"></svg></div>
           </div>
-          <div class="foot"><img src="assets/logo-mark-white.svg" alt="OpenEconomics"></div><span class="tc">Sc. 22 · 0:29 – 0:44</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
+          <div class="foot"><img class="f-oe" src="assets/logo-white.svg" alt="OpenEconomics"><img class="f-anci" src="assets/logo-anci-lazio-white.png" alt="ANCI Lazio"><img class="f-lazio" src="assets/logo-regione-lazio-white.png" alt="Regione Lazio"></div><span class="tc">Sc. 22 · 0:23 – 0:38</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
         </div>
         <div class="info">
           <p class="idx">Scena 22 · Dimensione 1: il polo di Rieti e Cittaducale <span class="chip">Dati reali</span> <span class="chip">Foto vera</span></p>
@@ -739,7 +727,7 @@ footer .fine{
               <div class="dots" id="d24" data-n="26" data-on="5" data-d="4.8" data-d2="5.3"></div>
             </div>
           </div>
-          <div class="foot"><img src="assets/logo-mark-white.svg" alt="OpenEconomics"></div><span class="tc">Sc. 24 · 0:44 – 0:58</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
+          <div class="foot"><img class="f-oe" src="assets/logo-white.svg" alt="OpenEconomics"><img class="f-anci" src="assets/logo-anci-lazio-white.png" alt="ANCI Lazio"><img class="f-lazio" src="assets/logo-regione-lazio-white.png" alt="Regione Lazio"></div><span class="tc">Sc. 24 · 0:38 – 0:52</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
         </div>
         <div class="info">
           <p class="idx">Scena 24 · Dimensione 2: le comunità energetiche <span class="chip">Dati reali</span> <span class="chip g">Immagine AI riusata</span></p>
@@ -767,7 +755,7 @@ footer .fine{
             </div>
             <p class="tag reg25 a-up" style="--d:12.2s">Proposta di regolamento 2028–2034 · preparazione alle catastrofi</p>
           </div>
-          <div class="foot"><img src="assets/logo-mark-white.svg" alt="OpenEconomics"></div><span class="tc">Sc. 25 · 0:58 – 1:12</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
+          <div class="foot"><img class="f-oe" src="assets/logo-white.svg" alt="OpenEconomics"><img class="f-anci" src="assets/logo-anci-lazio-white.png" alt="ANCI Lazio"><img class="f-lazio" src="assets/logo-regione-lazio-white.png" alt="Regione Lazio"></div><span class="tc">Sc. 25 · 0:52 – 1:06</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
         </div>
         <div class="info">
           <p class="idx">Scena 25 · Dimensione 2: il rischio di alluvione <span class="chip">Dati reali</span> <span class="chip">Foto del video di ottobre</span></p>
@@ -795,7 +783,7 @@ footer .fine{
               <span class="ref a-fade" style="--d:7.5s"><b>50</b> resto del Lazio,<br>Roma esclusa</span>
             </div>
           </div>
-          <div class="foot"><img src="assets/logo-mark-black.svg" alt="OpenEconomics"></div><span class="tc">Sc. 27 · 1:12 – 1:25</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
+          <div class="foot"><img class="f-oe" src="assets/logo-white.svg" alt="OpenEconomics"><img class="f-anci" src="assets/logo-anci-lazio-white.png" alt="ANCI Lazio"><img class="f-lazio" src="assets/logo-regione-lazio-white.png" alt="Regione Lazio"></div><span class="tc">Sc. 27 · 1:06 – 1:19</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
         </div>
         <div class="info">
           <p class="idx">Scena 27 · Dimensione 3: la mobilità <span class="chip">Dati reali</span> <span class="chip g">Dati provvisori</span></p>
@@ -822,7 +810,7 @@ footer .fine{
               <p class="cmpl a-fade" style="--d:10.1s">Resto del Lazio, Roma esclusa · <b>6%</b></p>
             </div>
           </div>
-          <div class="foot"><img src="assets/logo-mark-white.svg" alt="OpenEconomics"></div><span class="tc">Sc. 28 · 1:25 – 1:40</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
+          <div class="foot"><img class="f-oe" src="assets/logo-white.svg" alt="OpenEconomics"><img class="f-anci" src="assets/logo-anci-lazio-white.png" alt="ANCI Lazio"><img class="f-lazio" src="assets/logo-regione-lazio-white.png" alt="Regione Lazio"></div><span class="tc">Sc. 28 · 1:19 – 1:34</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
         </div>
         <div class="info">
           <p class="idx">Scena 28 · Dimensione 3: le strade della montagna <span class="chip">Dati reali</span> <span class="chip">Foto vera</span></p>
@@ -851,7 +839,7 @@ footer .fine{
             </div>
             <div class="side"><div class="dots g100" id="d30" data-n="100" data-on="15" data-ref="2" data-d="3.2" data-d2="3.5" data-d3="10.9"></div></div>
           </div>
-          <div class="foot"><img src="assets/logo-mark-white.svg" alt="OpenEconomics"></div><span class="tc">Sc. 30 · 1:40 – 1:54</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
+          <div class="foot"><img class="f-oe" src="assets/logo-white.svg" alt="OpenEconomics"><img class="f-anci" src="assets/logo-anci-lazio-white.png" alt="ANCI Lazio"><img class="f-lazio" src="assets/logo-regione-lazio-white.png" alt="Regione Lazio"></div><span class="tc">Sc. 30 · 1:34 – 1:48</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
         </div>
         <div class="info">
           <p class="idx">Scena 30 · Dimensione 4: la scuola media lontana <span class="chip">Dati reali</span> <span class="chip g">Immagine AI riusata</span></p>
@@ -881,7 +869,7 @@ footer .fine{
               <p class="tag reg a-up" style="--d:14.8s">Proposta di regolamento 2028–2034</p>
             </div>
           </div>
-          <div class="foot"><img src="assets/logo-mark-white.svg" alt="OpenEconomics"></div><span class="tc">Sc. 31 · 1:54 – 2:12</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
+          <div class="foot"><img class="f-oe" src="assets/logo-white.svg" alt="OpenEconomics"><img class="f-anci" src="assets/logo-anci-lazio-white.png" alt="ANCI Lazio"><img class="f-lazio" src="assets/logo-regione-lazio-white.png" alt="Regione Lazio"></div><span class="tc">Sc. 31 · 1:48 – 2:06</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
         </div>
         <div class="info">
           <p class="idx">Scena 31 · Dimensione 4: il ricambio generazionale <span class="chip">Dati reali</span> <span class="chip g">Immagine AI riusata</span></p>
@@ -915,7 +903,7 @@ footer .fine{
               <p class="cmpl a-fade" style="--d:14.0s">Resto del Lazio, Roma esclusa · <b>8<span class="sep">,</span>1 km</b></p>
             </div>
           </div>
-          <div class="foot"><img src="assets/logo-mark-white.svg" alt="OpenEconomics"></div><span class="tc">Sc. 33 · 2:12 – 2:28</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
+          <div class="foot"><img class="f-oe" src="assets/logo-white.svg" alt="OpenEconomics"><img class="f-anci" src="assets/logo-anci-lazio-white.png" alt="ANCI Lazio"><img class="f-lazio" src="assets/logo-regione-lazio-white.png" alt="Regione Lazio"></div><span class="tc">Sc. 33 · 2:06 – 2:22</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
         </div>
         <div class="info">
           <p class="idx">Scena 33 · Dimensione 5: il pronto soccorso lontano <span class="chip">Dati reali</span> <span class="chip">Foto vera</span></p>
@@ -951,7 +939,7 @@ footer .fine{
             </div>
             <div class="mapR"><svg id="m34" viewBox="0 0 600 600" aria-hidden="true" data-d="4.8" data-a="18.3,20.5,21.8,22.2,22.7"></svg></div>
           </div>
-          <div class="foot"><img src="assets/logo-mark-white.svg" alt="OpenEconomics"></div><span class="tc">Sc. 34 · 2:28 – 2:53</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
+          <div class="foot"><img class="f-oe" src="assets/logo-white.svg" alt="OpenEconomics"><img class="f-anci" src="assets/logo-anci-lazio-white.png" alt="ANCI Lazio"><img class="f-lazio" src="assets/logo-regione-lazio-white.png" alt="Regione Lazio"></div><span class="tc">Sc. 34 · 2:22 – 2:47</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
         </div>
         <div class="info">
           <p class="idx">Scena 34 · Dimensione 5: dove investire <span class="chip">Dati reali</span> <span class="chip">Mappa e schema</span> <span class="chip g">Comuni provvisori</span></p>
@@ -980,7 +968,7 @@ footer .fine{
               </div>
             </div>
           </div>
-          <div class="foot"><img src="assets/logo-mark-white.svg" alt="OpenEconomics"></div><span class="tc">Sc. 36 · 2:53 – 3:07</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
+          <div class="foot"><img class="f-oe" src="assets/logo-white.svg" alt="OpenEconomics"><img class="f-anci" src="assets/logo-anci-lazio-white.png" alt="ANCI Lazio"><img class="f-lazio" src="assets/logo-regione-lazio-white.png" alt="Regione Lazio"></div><span class="tc">Sc. 36 · 2:47 – 3:01</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
         </div>
         <div class="info">
           <p class="idx">Scena 36 · Dimensione 6: il personale dei comuni <span class="chip">Dati reali</span> <span class="chip">Numerone</span></p>
@@ -1023,7 +1011,7 @@ footer .fine{
               </div>
             </div>
           </div>
-          <div class="foot"><img src="assets/logo-mark-white.svg" alt="OpenEconomics"></div><span class="tc">Sc. 37 · 3:07 – 3:35</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
+          <div class="foot"><img class="f-oe" src="assets/logo-white.svg" alt="OpenEconomics"><img class="f-anci" src="assets/logo-anci-lazio-white.png" alt="ANCI Lazio"><img class="f-lazio" src="assets/logo-regione-lazio-white.png" alt="Regione Lazio"></div><span class="tc">Sc. 37 · 3:01 – 3:29</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
         </div>
         <div class="info">
           <p class="idx">Scena 37 · Dimensione 6: il ruolo dei comuni nel nuovo ciclo <span class="chip">Schema animato</span></p>
@@ -1048,7 +1036,7 @@ footer .fine{
               <img class="l-lazio" src="assets/logo-regione-lazio-white.png" alt="Regione Lazio">
             </div>
           </div>
-          <span class="tc">Sc. 40 · 3:35 – 3:41</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
+          <span class="tc">Sc. 40 · 3:29 – 3:35</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
         </div>
         <div class="info">
           <p class="idx">Scena 40 · Chiusura: We measure what really matters <span class="chip">Claim e loghi</span> <span class="chip g">Da decidere</span></p>
@@ -1076,7 +1064,6 @@ footer .fine{
         <table>
           <thead><tr><th>Scena</th><th>Voce</th><th class="n">Parole</th><th class="n">Secondi</th></tr></thead>
           <tbody>
-            <tr><td>Cover</td><td>—</td><td class="n">—</td><td class="n">6</td></tr>
             <tr><td>21 · infrastrutture produttive e logistica</td><td>Uomo</td><td class="n">49</td><td class="n">23</td></tr>
             <tr><td>22 · il polo di Rieti e Cittaducale</td><td>Uomo</td><td class="n">29</td><td class="n">15</td></tr>
             <tr><td>24 · le comunità energetiche</td><td>Donna</td><td class="n">28</td><td class="n">14</td></tr>
@@ -1128,7 +1115,7 @@ footer .fine{
           <li><span class="w">Immagini AI</span>scene 24, 30 e 31 riusano le immagini AI di Viterbo (Tuscia, noccioleto): confermare o rigenerare su luoghi reatini (Sabina, ulivi)</li>
           <li><span class="w">Scena 22 · foto</span>la sceneggiatura chiede capannoni AI: qui una foto vera di Rieti dall'alto verso la zona industriale; da confermare</li>
           <li><span class="w">Scena 40 · claim</span>la v4 rimette «We measure what really matters», che a Viterbo il cliente aveva tolto (12 novembre); «Mettiamoci al lavoro.» va detta o scritta?</li>
-          <li><span class="w">Stacco prima della cover</span>«Passiamo alla fase dei workshop» chiude la Parte 2: è nella pagina della Parte 2</li>
+          <li><span class="w">Stacco</span>«Passiamo alla fase dei workshop» chiude la Parte 2: è nella pagina della Parte 2</li>
         </ul>
       </div>
     </div>
@@ -1139,6 +1126,7 @@ footer .fine{
   <div class="wrap">
     <h2>Note di lettura</h2>
     <ul>
+      <li><strong>Revisione del 17 novembre</strong> (cliente, via Fede, per le tv locali): su ogni frame il footer con OpenEconomics per esteso, ANCI Lazio e Regione Lazio; tolti i separatori di parte (cover «Parte N» e righe «Fine parte · A seguire»); nessun «100%» sotto le barre. I timecode partono da 0:00 senza cover.</li>
       <li>Questa pagina è uno <strong>storyboard</strong>: i frame mostrano composizione, testi e tempi d'entrata. Senza animazione ogni frame mostra lo stato finale della scena.</li>
       <li><strong>Dati:</strong> dalla sceneggiatura v4 (fonte: Dashboard_Rieti.html, bozza del 9 novembre 2026); grafici e mappe ridisegnati in palette OE, senza titolo né fonte. Confronto sempre con il resto del Lazio, Roma esclusa.</li>
       <li><strong>Mappe:</strong> confini ISTAT dei 73 comuni della provincia di Rieti (openpolis, <code>geojson-italy</code>), come nella scena 2 della Parte 1.</li>

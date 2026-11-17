@@ -506,6 +506,14 @@ footer .fine{
 /* scena 20 (Rieti): il filo Lime che riporta l'indicatore al dato */
 .s20 .chain{transform:translateY(-58%)}
 .chain .loop{position:absolute;left:0;top:100%;width:100%;height:6cqw;overflow:visible}
+
+/* ── Footer di ogni frame (17/11, per le tv locali): OpenEconomics per esteso + ANCI Lazio + Regione Lazio ── */
+.foot{gap:2.6cqw}
+.foot img{height:auto;width:auto;display:block}
+.foot img.f-oe{height:1.9cqw}
+.foot img.f-anci{height:3.6cqw}
+.foot img.f-lazio{height:2.9cqw}
+.light .foot img{filter:brightness(0)}
 </style>
 </head>
 <body>
@@ -515,10 +523,10 @@ footer .fine{
     <nav class="parts" aria-label="Parti del video"><a href="Storyboard-Rieti-Parte-1.html">Parte 1 · La foto del territorio</a><a href="Storyboard-Rieti-Parte-2.html" aria-current="page">Parte 2 · Il metodo del cubo</a><a href="Storyboard-Rieti-Parte-3.html">Parte 3 · Sei direttrici</a></nav>
     <p class="eyebrow">OpenEconomics · Storyboard visivo · Bozza</p>
     <h1>Video analisi territoriale Rieti · Parte 2</h1>
-    <p class="sub">Il metodo del cubo: cover, quattro scene dalla sceneggiatura v4 del 13 novembre 2026 e lo stacco «Passiamo alla fase dei workshop». Le scene 15 e 16 sono quelle del video di Viterbo; la 18 e la 20 sono nuove, con i dati di Rieti. Nessuna foto: la Parte 2 è tutta motion graphic. Cubo, facce e grafici si animano a tempo con la voce stimata.</p>
+    <p class="sub">Il metodo del cubo: quattro scene dalla sceneggiatura v4 del 13 novembre 2026 e lo stacco «Passiamo alla fase dei workshop». Le scene 15 e 16 sono quelle del video di Viterbo; la 18 e la 20 sono nuove, con i dati di Rieti. Nessuna foto: la Parte 2 è tutta motion graphic. Cubo, facce e grafici si animano a tempo con la voce stimata.</p>
     <dl class="meta">
       <div><dt>Durata in sceneggiatura</dt><dd>1:35 (3:27 – 5:02)</dd></div>
-      <div><dt>In questa pagina</dt><dd>1:35 con cover e stacco</dd></div>
+      <div><dt>In questa pagina</dt><dd>1:29 con lo stacco, senza cover</dd></div>
       <div><dt>Formato</dt><dd>Orizzontale 16:9</dd></div>
       <div><dt>Lingua</dt><dd>Italiano</dd></div>
       <div><dt>Voci</dt><dd>Uomo nella 15, donna nelle 16, 18 e 20 (Marco Esposito e Giulia Romano)</dd></div>
@@ -557,27 +565,6 @@ footer .fine{
     <div class="grid" id="grid">
 
       <!-- Cover ──────────────────────────────────────────────────────── -->
-      <article class="beat">
-        <div class="frame cover" data-dur="6" tabindex="0" role="button" aria-label="Cover, rivedi animazione">
-          <div class="stage">
-            <span class="big a-fade" style="--d:.2s" aria-hidden="true">28–34</span>
-            <div class="tblock">
-              <p class="k a-up" style="--d:.35s">Analisi territoriale · Provincia di Rieti</p>
-              <p class="hl line1 a-up" style="--d:.9s">Parte 2</p>
-              <p class="hl line2 a-up" style="--d:1.5s">Il metodo del cubo</p>
-            </div>
-          </div>
-          <img class="anci" src="assets/logo-anci-lazio-white.png" alt="ANCI Lazio"><div class="foot"><img src="assets/logo-mark-white.svg" alt="OpenEconomics"></div><span class="tc">Cover · 0:00 – 0:06</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
-        </div>
-        <div class="info">
-          <p class="idx">Cover · Parte 2 <span class="chip g">Come la Parte 1</span></p>
-          <dl>
-            <div><dt>On-screen</dt><dd>Analisi territoriale · Provincia di Rieti · «Parte 2» · «Il metodo del cubo» · filigrana 28–34 · logo ANCI Lazio in alto a destra (solo in cover)</dd></div>
-            <div><dt>Voiceover</dt><dd class="vo">Nessuno: musica in apertura.</dd></div>
-            <div><dt>Nota</dt><dd class="note">Come a Viterbo, ogni parte è un video a sé e ha la sua cover di sei secondi.</dd></div>
-          </dl>
-        </div>
-      </article>
 
       <!-- 15 ────────────────────────────────────────────────────────── -->
       <article class="beat">
@@ -588,7 +575,7 @@ footer .fine{
               <div class="cube3d" id="s15cube"></div>
             </div>
           </div>
-          <div class="foot"><img src="assets/logo-mark-white.svg" alt="OpenEconomics"></div><span class="tc">Sc. 15 · 0:06 – 0:29</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
+          <div class="foot"><img class="f-oe" src="assets/logo-white.svg" alt="OpenEconomics"><img class="f-anci" src="assets/logo-anci-lazio-white.png" alt="ANCI Lazio"><img class="f-lazio" src="assets/logo-regione-lazio-white.png" alt="Regione Lazio"></div><span class="tc">Sc. 15 · 0:00 – 0:23</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
         </div>
         <div class="info">
           <p class="idx">Scena 15 · Il metodo del cubo <span class="chip">Rendering 3D</span> <span class="chip g">Come da video Viterbo</span></p>
@@ -611,7 +598,7 @@ footer .fine{
             </div>
             <div class="net" id="s16net"></div>
           </div>
-          <div class="foot"><img src="assets/logo-mark-white.svg" alt="OpenEconomics"></div><span class="tc">Sc. 16 · 0:29 – 0:45</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
+          <div class="foot"><img class="f-oe" src="assets/logo-white.svg" alt="OpenEconomics"><img class="f-anci" src="assets/logo-anci-lazio-white.png" alt="ANCI Lazio"><img class="f-lazio" src="assets/logo-regione-lazio-white.png" alt="Regione Lazio"></div><span class="tc">Sc. 16 · 0:23 – 0:39</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
         </div>
         <div class="info">
           <p class="idx">Scena 16 · Le sei facce <span class="chip">Motion graphic</span> <span class="chip g">Come da video Viterbo</span></p>
@@ -637,7 +624,7 @@ footer .fine{
               <span class="ref a-fade" style="--d:10.1s">Resto del Lazio,<br>Roma esclusa = <b>50</b></span>
             </div>
           </div>
-          <div class="foot"><img src="assets/logo-mark-black.svg" alt="OpenEconomics"></div><span class="tc">Sc. 18 · 0:45 – 1:05</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
+          <div class="foot"><img class="f-oe" src="assets/logo-white.svg" alt="OpenEconomics"><img class="f-anci" src="assets/logo-anci-lazio-white.png" alt="ANCI Lazio"><img class="f-lazio" src="assets/logo-regione-lazio-white.png" alt="Regione Lazio"></div><span class="tc">Sc. 18 · 0:39 – 0:59</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
         </div>
         <div class="info">
           <p class="idx">Scena 18 · Quindici ambiti da misurare <span class="chip">Grafico della dashboard</span> <span class="chip g">Dati provvisori</span></p>
@@ -676,7 +663,7 @@ footer .fine{
               </svg>
             </div>
           </div>
-          <div class="foot"><img src="assets/logo-mark-white.svg" alt="OpenEconomics"></div><span class="tc">Sc. 20 · 1:05 – 1:30</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
+          <div class="foot"><img class="f-oe" src="assets/logo-white.svg" alt="OpenEconomics"><img class="f-anci" src="assets/logo-anci-lazio-white.png" alt="ANCI Lazio"><img class="f-lazio" src="assets/logo-regione-lazio-white.png" alt="Regione Lazio"></div><span class="tc">Sc. 20 · 0:59 – 1:24</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
         </div>
         <div class="info">
           <p class="idx">Scena 20 · Dal dato all'indicatore <span class="chip">Motion graphic</span> <span class="chip g">Nuova</span></p>
@@ -694,16 +681,15 @@ footer .fine{
         <div class="frame end deep" data-dur="5" tabindex="0" role="button" aria-label="Stacco, rivedi animazione">
           <div class="stage">
             <p class="hl a-up" style="--d:.4s">Passiamo alla fase<br>dei workshop</p>
-            <div class="lines a-fade" style="--d:1.6s"><span>Provincia di Rieti · Fine parte 2 · Il metodo del cubo</span><span>A seguire · Sei direttrici di sviluppo territoriale</span></div>
           </div>
-          <span class="tc">Stacco · 1:30 – 1:35</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
+          <div class="foot"><img class="f-oe" src="assets/logo-white.svg" alt="OpenEconomics"><img class="f-anci" src="assets/logo-anci-lazio-white.png" alt="ANCI Lazio"><img class="f-lazio" src="assets/logo-regione-lazio-white.png" alt="Regione Lazio"></div><span class="tc">Stacco · 1:24 – 1:29</span><span class="replay">↻ Rivedi</span><div class="safe"></div>
         </div>
         <div class="info">
           <p class="idx">Stacco · Fine Parte 2 <span class="chip g">Da confermare</span></p>
           <dl>
-            <div><dt>On-screen</dt><dd>Bluette 900 · «Passiamo alla fase dei workshop» in Hedvig, centrato · in basso a sinistra, in mono: «Provincia di Rieti · Fine parte 2 · Il metodo del cubo» / «A seguire · Sei direttrici di sviluppo territoriale»</dd></div>
+            <div><dt>On-screen</dt><dd>Bluette 900 · «Passiamo alla fase dei workshop» in Hedvig, centrato · footer con i tre loghi</dd></div>
             <div><dt>Voiceover</dt><dd class="vo">Nessuno: musica in chiusura. Il moderatore ferma il video, commenta e organizza i tavoli.</dd></div>
-            <div><dt>Nota</dt><dd class="note">Lo stacco è nella sceneggiatura v4. A Viterbo lo stacco della Parte 2 è stato tolto il 10 novembre e la nota tecnica in mono è stata tolta dalla chiusura su commento di Martina: da decidere se a Rieti restano tutte e due.</dd></div>
+            <div><dt>Nota</dt><dd class="note">Revisione del 17/11 (cliente, via Fede): tolti i separatori di parte, cioè la cover «Parte 2» e le righe in mono «Fine parte 2 · A seguire». Resta la frase per il moderatore, che apre i tavoli.</dd></div>
           </dl>
         </div>
       </article>
@@ -723,7 +709,6 @@ footer .fine{
         <table>
           <thead><tr><th>Scena</th><th>Voce</th><th class="n">Secondi</th><th class="n">Parole</th><th class="n">Parole/s</th></tr></thead>
           <tbody>
-            <tr><td>Cover</td><td>—</td><td class="n">6</td><td class="n">—</td><td class="n">—</td></tr>
             <tr><td>15 · Il metodo del cubo</td><td>Uomo</td><td class="n">23</td><td class="n">49</td><td class="n">2,1</td></tr>
             <tr><td>16 · Le sei facce</td><td>Donna</td><td class="n">16</td><td class="n">33</td><td class="n">2,1</td></tr>
             <tr><td>18 · Quindici ambiti</td><td>Donna</td><td class="n">20</td><td class="n">41</td><td class="n">2,1</td></tr>
@@ -732,7 +717,7 @@ footer .fine{
           </tbody>
         </table>
         </div>
-        <p class="tbl-note">Durate e parole dalla sceneggiatura v4 (176 parole, 1:35 con cover e stacco). Le scene 17 e 19 sono tolte, come a Viterbo. A Viterbo la Parte 2 montata dura 1:35.</p>
+        <p class="tbl-note">Durate e parole dalla sceneggiatura v4 (176 parole, 1:35 in sceneggiatura con la cover, 1:29 senza). Le scene 17 e 19 sono tolte, come a Viterbo. A Viterbo la Parte 2 montata dura 1:35.</p>
       </div>
       <div>
         <h3 class="sec-h">Da verificare prima della produzione</h3>
@@ -741,7 +726,7 @@ footer .fine{
           <li><span class="w">Scena 15 · voce</span>la v4 ha la voce <ins>con il cubo di Rubik</ins>, tolta a Viterbo il 10 novembre: quale delle due vale?</li>
           <li><span class="w">Scena 20 · obiettivo</span>l'obiettivo O4 delle aree agricole è del Piano a livello Lazio, non specifico di Rieti</li>
           <li><span class="w">Scena 20 · indicatore</span>«presenze per posto letto» è una proposta, non è nella dashboard (chip «Esempio»)</li>
-          <li><span class="w">Stacco</span>tenerlo come da v4, o toglierlo come a Viterbo? E la riga in mono?</li>
+          <li><span class="w">Stacco</span>il 17/11 il cliente ha chiesto di togliere i separatori di parte: tolte cover e righe in mono, resta la frase «Passiamo alla fase dei workshop» per il moderatore. Da togliere anche quella?</li>
         </ul>
       </div>
     </div>
@@ -752,6 +737,7 @@ footer .fine{
   <div class="wrap">
     <h2>Note di lettura</h2>
     <ul>
+      <li><strong>Revisione del 17 novembre</strong> (cliente, via Fede, per le tv locali): su ogni frame il footer con OpenEconomics per esteso, ANCI Lazio e Regione Lazio; tolti i separatori di parte (cover «Parte N» e righe «Fine parte · A seguire»); nessun «100%» sotto le barre. I timecode partono da 0:00 senza cover.</li>
       <li>Questa pagina è uno <strong>storyboard</strong>: i frame mostrano composizione, testi e tempi d'entrata. Senza animazione ogni frame mostra lo stato finale della scena.</li>
       <li><strong>Scene 15 e 16:</strong> le stesse del video di Viterbo (cubo olografico in Three.js e croce delle sei direttrici), con i tempi ricalcolati sulla voce della v4.</li>
       <li><strong>Grafico della scena 18:</strong> quindici ambiti dell'Osservatorio Sviluppo Lazio, indice OpenEconomics da 0 a 100 (resto del Lazio, Roma esclusa = 50), ridisegnati in palette OE senza titolo né fonte. Valori in parte provvisori: vedi la scheda della scena.</li>
